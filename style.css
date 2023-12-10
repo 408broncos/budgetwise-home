@@ -32,17 +32,18 @@ html, body {
 }
 
 .logo img {
-    height: 50px;
+    height: 20px;
 }
 
 .logo h2 {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
 }
 
 .navbar-nav {
     display: flex;
     align-items: center;
+    margin-left: 80px;
 }
 
 .nav-item {
@@ -68,8 +69,7 @@ html, body {
 }
 
 #blue {
-    background-color: blue;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 4px;
     padding: 6px 12px;
 }
@@ -112,6 +112,7 @@ html, body {
 .monthly-budget h3 {
     margin: 0;
     font-size: 20px; /* Adjust as needed */
+    margin-right: 20px
 }
 
 .budget-container {
@@ -148,7 +149,7 @@ html, body {
     border-radius: 10px; /* Rounded corners for the dropdown */
     font-size: 14px; 
     margin-top: 10px;
-    margin-right: 75px;
+    margin-right: 100px;
 }
 .dropdown-content {
     display: none;
@@ -175,7 +176,7 @@ html, body {
     text-align: center;
     width: 100%; /* Ensure full width for alignment */
     margin-top: 40px; 
-    margin-left: -435px;
+    margin-left: -450px;
 }
 
 .top-right-content {
