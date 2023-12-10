@@ -176,7 +176,7 @@ html, body {
     text-align: center;
     width: 100%; /* Ensure full width for alignment */
     margin-top: 40px; 
-    margin-left: -450px;
+    margin-left: -440px;
 }
 
 .top-right-content {
@@ -193,32 +193,81 @@ html, body {
 .icon {
     height: auto;
     width: 20px;
-    margin: 0px 20px;
+    margin: 0px 140px;
     margin-left: -200px;
-    margin-top: 50px;
-    justify-content: space-between;
+margin-bottom: 60px;
 }
 
 .budget-summary {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #fff; /* White background for the card */
+    border-radius: 20px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+    padding: 20px;
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Evenly space the items within the container */
+    margin-top: 1em; /* Add some space from the top */
 }
 
 .summary-item {
-    display: flex;
-    flex-direction: column; /* Stack the title and amount on top of each other */
-    align-items: center; /* Center align the content */
-    margin: 0 10px; 
+    text-align: center; /* Center the text inside each summary item */
+    padding: 0 10px; /* Add padding to create space around each item */
+    position: relative; /* Position relative to use pseudo-elements for borders */
 }
 
+.summary-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0; /* Position it on the right side */
+    top: 30%; /* Center it vertically */
+    transform: translateY(-50%); /* Align the border properly in the center */
+    height: 40%; /* The height of the border */
+    border-right: 2px solid #eaeaea; /* The border */
+}
+
+
 .summary-title {
- 
+    color: #888; /* Grey color for the title text */
+    font-size: 0.9em; /* Smaller font size for the title */
+    margin-bottom: 0.5em; /* Space between the title and the amount */
 }
 
 .summary-amount {
+    display: block;
+    color: #bc3838; /* Red color for the amount */
+    font-size: 1.5em; /* Larger font size for the amount */
+    font-weight: bold; /* Make the amount bold */
+    margin: 0 20px;
 }
 
-.user-info {
+.summary-amount-2 {
+    display: block;
+    color: #54c756; /* Green color for the amount */
+    font-size: 1.5em; /* Larger font size for the amount */
+    font-weight: bold; /* Make the amount bold */
+    margin: 0 20px;
+
+}
+
+.summary-amount-3 {
+    display: block;
+    color: #040303; /* Black color for the amount */
+    font-size: 1.5em; /* Larger font size for the amount */
+    font-weight: bold; /* Make the amount bold */
+    margin: 0 20px;
+
+}
+/* Progress bar styles */
+.progress-bar-container {
+    background-color: #eaeaea; /* Light grey background for the progress bar */
+    border-radius: 10px; /* Rounded corners for the progress bar */
+    height: 20px; 
+    width: 300%; /* Full width of the parent container */
+    margin: 20px 0; /* Margin around the progress bar */
+}
+
+.progress-bar {
+    background-color: #4537b3; /* Color for the progress bar fill */
+    height: 20px; /* Fixed height for the progress bar fill */
+    border-radius: 10px; /* Rounded corners for the progress bar fill */
+    width: 50%; /* Example width to demonstrate progress, adjust as needed */
 }
