@@ -1,0 +1,223 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* Applied background color here to cover the entire page */
+}
+
+
+.header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px; /* Ensure that it matches the 'top' value of the .container class */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo-and-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between logo and nav items */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 4px 15px;
+    font-size: 15px; /*  font size  */
+    margin-right: 10px; /*  spacing between nav items */
+}
+
+/* ... */
+
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth .auth-item {
+    text-decoration: none;
+    color: #333;
+    padding: 4px 15px;
+    margin-left: 10px;
+}
+
+#blue {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.container {
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 60px; /* Starts the container right at the bottom of the header */
+    left: 0;
+    width: 200px; 
+    bottom: 0;
+    overflow-y: auto; /* Allows scrolling within the container if content overflows */
+}
+
+/* Styles for navigation items in the sidebar */
+.container .nav-link {
+    display: block; /* Makes each link full-width of the sidebar */
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0; /* Vertical padding for each link */
+    margin-bottom: 2px; /* Spacing between links */
+}
+
+/* Main content area styles */
+.main-content {
+    margin-left: 250px; /* Adjust based on the width of your sidebar */
+    margin-top: 80px;
+    padding-top: 60px; /* Adjust if your header height is different */
+    padding: 20px; /* Adjust as needed */
+}
+
+.monthly-budget {
+    text-align: center;
+    margin-bottom: 0px; /* Space between Monthly Budget and Categories */
+    margin-left: -800px;
+}
+
+.monthly-budget h3 {
+    margin: 0;
+    font-size: 20px; /* Adjust as needed */
+}
+
+.budget-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex; /* Center align the children horizontally */
+    width: 100%; 
+}
+    
+
+.budget-section h3 {
+    margin-bottom: 20px; /* Space between h3 and dropdown button */
+}
+
+.budget-section .dropdown {
+    margin-bottom: 20px; /* Space between dropdown button and h4 */
+}
+
+.categories-section {
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #e2f7e3; /* Example button color */
+    color: rgb(85, 192, 90);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners for the dropdown */
+    font-size: 14px; 
+    margin-top: 10px;
+    margin-right: 75px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e2f7e3;;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(85, 192, 90);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.categories h4 {
+    text-align: center;
+    width: 100%; /* Ensure full width for alignment */
+    margin-top: 40px; 
+    margin-left: -435px;
+}
+
+.top-right-content {
+    display: flex;
+    justify-content: space-between; /* This will align the children on opposite ends */
+    align-items: center; /* This will vertically center align the children */
+    margin-bottom: 20px; 
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+
+
+.icon {
+    height: auto;
+    width: 20px;
+    margin: 0px 20px;
+    margin-left: -200px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.budget-summary {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column; /* Stack the title and amount on top of each other */
+    align-items: center; /* Center align the content */
+    margin: 0 10px; 
+}
+
+.summary-title {
+ 
+}
+
+.summary-amount {
+}
+
+.user-info {
+}
