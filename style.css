@@ -98,10 +98,10 @@ html, body {
 
 /* Main content area styles */
 .main-content {
-    margin-left: 250px; /* Adjust based on the width of your sidebar */
+    margin-left: 250px; 
     margin-top: 80px;
-    padding-top: 60px; /* Adjust if your header height is different */
-    padding: 20px; /* Adjust as needed */
+    padding-top: 60px; 
+    padding: 20px; 
 }
 
 .monthly-budget {
@@ -234,9 +234,8 @@ margin-bottom: 60px;
 
 .summary-amount {
     display: block;
-    color: #bc3838; /* Red color for the amount */
+    color: #fa6868; /* Red color for the amount */
     font-size: 1.5em; /* Larger font size for the amount */
-    font-weight: bold; /* Make the amount bold */
     margin: 0 20px;
 }
 
@@ -244,7 +243,6 @@ margin-bottom: 60px;
     display: block;
     color: #54c756; /* Green color for the amount */
     font-size: 1.5em; /* Larger font size for the amount */
-    font-weight: bold; /* Make the amount bold */
     margin: 0 20px;
 
 }
@@ -253,7 +251,6 @@ margin-bottom: 60px;
     display: block;
     color: #040303; /* Black color for the amount */
     font-size: 1.5em; /* Larger font size for the amount */
-    font-weight: bold; /* Make the amount bold */
     margin: 0 20px;
 
 }
@@ -270,7 +267,7 @@ margin-bottom: 60px;
     background-color: #4537b3; /* Color for the progress bar fill */
     height: 20px; /* Fixed height for the progress bar fill */
     border-radius: 10px; /* Rounded corners for the progress bar fill */
-    width: 50%; /* Example width to demonstrate progress, adjust as needed */
+    width: 50%;
 }
 
 .categories {
@@ -292,157 +289,157 @@ margin-bottom: 60px;
 }
 
 .category-icon {
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* Make sure the icon fits within the dimensions */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+    width: 30px;  
+    height: 30px;  
+    background-size: contain; 
+    background-repeat: no-repeat; 
     flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 
 .category-icon-education {
-    background-image: url('icons/education.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/education.png');
+    width: 35px; 
+    height: 35px;
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-entertainment {
-    background-image: url('icons/entertain.png'); /* Path to your entertainment icon */
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-        margin-right: 15px; /* Adds space to the right of the icon */
+    background-image: url('icons/entertain.png');
+    width: 30px; 
+    height: 30px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+        margin-right: 15px;  
 
 }
 
 .category-icon-food {
-    background-image: url('icons/food.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/food.png'); 
+    width: 35px;  
+    height: 35px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-groceries {
-    background-image: url('icons/grocery.png'); /* Path to your entertainment icon */
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-        margin-right: 15px; /* Adds space to the right of the icon */
+    background-image: url('icons/grocery.png');
+    width: 30px;  
+    height: 30px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+        margin-right: 15px;  
 
 }
 
 .category-icon-health {
-    background-image: url('icons/health.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/health.png'); 
+    width: 35px;  
+    height: 35px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-housing {
-    background-image: url('icons/housing.png'); /* Path to your entertainment icon */
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-        margin-right: 15px; /* Adds space to the right of the icon */
+    background-image: url('icons/housing.png'); 
+    width: 30px;  
+    height: 30px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+        margin-right: 15px;  
 
 }
 
 .category-icon-misc {
-    background-image: url('icons/misc.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/misc.png');
+    width: 35px;  
+    height: 35px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-office {
-    background-image: url('icons/office.png'); /* Path to your entertainment icon */
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-        margin-right: 15px; /* Adds space to the right of the icon */
+    background-image: url('icons/office.png');
+    width: 30px;  
+    height: 30px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+        margin-right: 15px;  
 
 }
 
 .category-icon-pets {
-    background-image: url('icons/pets.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/pets.png');
+    width: 35px;  
+    height: 35px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-shopping {
-    background-image: url('icons/shop.png'); /* Path to your entertainment icon */
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-        margin-right: 15px; /* Adds space to the right of the icon */
+    background-image: url('icons/shop.png');
+    width: 30px;  
+    height: 30px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+        margin-right: 15px;  
 
 }
 
 .category-icon-subscriptions {
-    background-image: url('icons/subscribe.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/subscribe.png');
+    width: 35px;  
+    height: 35px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-transportation {
-    background-image: url('icons/transport.png'); /* Path to your entertainment icon */
-    width: 30px; /* Set the width of the icon */
-    height: 30px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-        margin-right: 15px; /* Adds space to the right of the icon */
+    background-image: url('icons/transport.png');
+    width: 30px;  
+    height: 30px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+        margin-right: 15px;  
 
 }
 
 .category-icon-travel {
-    background-image: url('icons/travel.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/travel.png');
+    width: 35px;  
+    height: 35px;  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 .category-icon-utils {
-    background-image: url('icons/utils.png'); /* Path to your education icon */
-    width: 35px; /* Set the width of the icon */
-    height: 35px; /* Set the height of the icon */
-    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
-    background-repeat: no-repeat; /* This will prevent the icon from repeating */
-    display: inline-block; /* This will allow you to set a width and height */
-    margin-right: 10px; /* Adds space to the right of the icon */
+    background-image: url('icons/utils.png');
+    width: 35px; 
+    height: 35px; 
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+    margin-right: 10px;  
 }
 
 
@@ -464,7 +461,7 @@ margin-bottom: 60px;
     border-radius: 10px;
     flex-grow: 1;
     height: 10px;
-    display: flex; /* This will allow you to set a width and height */
+    display: flex;  
     margin: 0 500px;
     margin-top: 90px;
     margin-left: 1px;
@@ -682,9 +679,9 @@ margin-bottom: 60px;
 .text-left-5,
 .left-5 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px; 
+    bottom: 0; 
+    margin-right: 250px; 
 }
 
 /* This will position the 'left' text slightly above the amount */
@@ -707,8 +704,8 @@ margin-bottom: 60px;
 .left-6 {
     position: absolute;
     right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    bottom: 0; 
+    margin-right: 250px; 
 }
 
 /* This will position the 'left' text slightly above the amount */
@@ -731,7 +728,7 @@ margin-bottom: 60px;
 .left-7 {
     position: absolute;
     right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
+    bottom: 0; 
     margin-right: 250px; /* Ensure they are aligned to the right without extra space */
 }
 
@@ -918,3 +915,62 @@ margin-bottom: 60px;
     top: 109em;
     left: 60%;
 }
+
+.right-content {
+    position: absolute;
+    top: 100%;
+    right: -2cap;
+    width: 455px; 
+    padding: 20px;
+}
+
+.six-month-snapshot {
+    margin-top: 20px; /* Spacing from the summary items */
+    background-color: #fff; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+    padding: 20px;
+}
+
+#graph-container {
+    width: 100%; /* Full width of the right-content */
+    height: 250px; 
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.graph-legend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 11px; /* space between items */
+    padding-top: 10px;
+    margin-bottom: 1px; /* space below the legend */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+}
+
+
+.legend-icon {
+    width: 10px; 
+    height: 10px; 
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* Specific colors for each category icon */
+.legend-icon.housing { background-color: #db3b3b; }
+.legend-icon.utilities { background-color: #37a4e9; }
+.legend-icon.legend-icon.entertainment { background-color: #e18336; }
+.legend-icon.transport { background-color: #f1b32d; }
+.legend-icon.food { background-color: #08096d; }
+.legend-icon.other { background-color: #684db8; }

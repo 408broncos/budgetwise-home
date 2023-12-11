@@ -16,7 +16,7 @@
                     <h2>BudgetWise</h2>
                 </div>
                 <nav class="navbar-nav">
-                    <a href="#about" class="nav-item">Home</a>
+                    <a href="#home" class="nav-item">Home</a>
                     <a href="#community" class="nav-item">Community</a>
                     <a href="#faq" class="nav-item">FAQs</a>
                 </nav>
@@ -246,6 +246,33 @@
                 <span class="summary-amount-3">$2,000</span>
             </div>
         </div>
+        <div class="right-content">
+            <div class="six-month-snapshot">
+                <h3>6 Month Snapshot</h3>
+                <!-- Placeholder for graph -->
+                <div id="graph-container">
+                    <!-- Graph will be rendered here, perhaps using a JavaScript charting library -->
+                    <p>Graph will go here</p>
+                </div>
+                <div class="graph-legend">
+                    <!-- Legend for the graph -->
+                    <span class="legend-item"><i class="legend-icon housing"></i>Housing</span>
+                    <span class="legend-item"><i class="legend-icon utilities"></i>Utilities</span>
+                    <span class="legend-item"><i class="legend-icon entertainment"></i>Entertainment</span>
+                    <span class="legend-item"><i class="legend-icon transport"></i>Transportation</span>
+                    <span class="legend-item"><i class="legend-icon food"></i>Food</span>
+                    <span class="legend-item"><i class="legend-icon other"></i>Other</span>
+                    <!-- ... Other legend items ... -->
+                </div>
+                <div class="graph-section">
+                    <bar-chart :chart-data="chartData" :options="chartOptions"></bar-chart>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    
         <div class="user-info">
         </div>
     </div>
@@ -259,5 +286,6 @@
             </section>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
