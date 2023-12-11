@@ -9,6 +9,7 @@ html, body {
 
 
 .header {
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
@@ -112,7 +113,7 @@ html, body {
 .monthly-budget h3 {
     margin: 0;
     font-size: 20px; /* Adjust as needed */
-    margin-right: 20px
+    margin-right: 120px
 }
 
 .budget-container {
@@ -149,7 +150,7 @@ html, body {
     border-radius: 10px; /* Rounded corners for the dropdown */
     font-size: 14px; 
     margin-top: 10px;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 .dropdown-content {
     display: none;
@@ -175,8 +176,8 @@ html, body {
 .categories h4 {
     text-align: center;
     width: 100%; /* Ensure full width for alignment */
-    margin-top: 40px; 
-    margin-left: -440px;
+    margin-top: 20px; 
+    margin-left: -500px;
 }
 
 .top-right-content {
@@ -270,4 +271,650 @@ margin-bottom: 60px;
     height: 20px; /* Fixed height for the progress bar fill */
     border-radius: 10px; /* Rounded corners for the progress bar fill */
     width: 50%; /* Example width to demonstrate progress, adjust as needed */
+}
+
+.categories {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -10px; /* Space between category items */
+    padding: 10px 0; /* Padding within each category item */
+}
+
+.category-details {
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* Make sure the icon fits within the dimensions */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.category-icon-education {
+    background-image: url('icons/education.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-entertainment {
+    background-image: url('icons/entertain.png'); /* Path to your entertainment icon */
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+        margin-right: 15px; /* Adds space to the right of the icon */
+
+}
+
+.category-icon-food {
+    background-image: url('icons/food.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-groceries {
+    background-image: url('icons/grocery.png'); /* Path to your entertainment icon */
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+        margin-right: 15px; /* Adds space to the right of the icon */
+
+}
+
+.category-icon-health {
+    background-image: url('icons/health.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-housing {
+    background-image: url('icons/housing.png'); /* Path to your entertainment icon */
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+        margin-right: 15px; /* Adds space to the right of the icon */
+
+}
+
+.category-icon-misc {
+    background-image: url('icons/misc.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-office {
+    background-image: url('icons/office.png'); /* Path to your entertainment icon */
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+        margin-right: 15px; /* Adds space to the right of the icon */
+
+}
+
+.category-icon-pets {
+    background-image: url('icons/pets.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-shopping {
+    background-image: url('icons/shop.png'); /* Path to your entertainment icon */
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+        margin-right: 15px; /* Adds space to the right of the icon */
+
+}
+
+.category-icon-subscriptions {
+    background-image: url('icons/subscribe.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-transportation {
+    background-image: url('icons/transport.png'); /* Path to your entertainment icon */
+    width: 30px; /* Set the width of the icon */
+    height: 30px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+        margin-right: 15px; /* Adds space to the right of the icon */
+
+}
+
+.category-icon-travel {
+    background-image: url('icons/travel.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+.category-icon-utils {
+    background-image: url('icons/utils.png'); /* Path to your education icon */
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    background-size: contain; /* This will make sure the entire icon is visible and scales to fit */
+    background-repeat: no-repeat; /* This will prevent the icon from repeating */
+    display: inline-block; /* This will allow you to set a width and height */
+    margin-right: 10px; /* Adds space to the right of the icon */
+}
+
+
+.category-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-text span:first-child {
+    font-weight: bold;
+}
+
+.category-text span:last-child {
+    color: #888;
+}
+
+.category-progress {
+    background-color: #eaeaea;
+    border-radius: 10px;
+    flex-grow: 1;
+    height: 10px;
+    display: flex; /* This will allow you to set a width and height */
+    margin: 0 500px;
+    margin-top: 90px;
+    margin-left: 1px;
+    width: 100px;
+}
+
+.education-progress {
+    background-color: #6ec9dc;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -170px;
+    /* Width will be set inline to represent the progress */
+}
+
+
+.entertain-progress {
+    background-color: #e18336;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.food-progress {
+    background-color: #08096d;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -170px;
+    /* Width will be set inline to represent the progress */
+}
+
+.groceries-progress {
+    background-color: #69e86b;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -175px;
+    /* Width will be set inline to represent the progress */
+}
+
+.health-progress {
+    background-color: #c33cf0;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.housing-progress {
+    background-color: #fb3a3a;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -190px;
+    /* Width will be set inline to represent the progress */
+}
+
+.misc-progress {
+    background-color: #a87d3e;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.office-progress {
+    background-color: #f099c6;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.pet-progress {
+    background-color: #543515;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.shop-progress {
+    background-color: #1e39b5;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.sub-progress {
+    background-color: #30636d;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.transport-progress {
+    background-color: #f1b32d;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.travel-progress {
+    background-color: #8b689e;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+
+.util-progress {
+    background-color: #37a4e9;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: -160px;
+    /* Width will be set inline to represent the progress */
+}
+.text-left,
+.left {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left {
+    bottom: 54%; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 40%;
+    left: 60%;
+}
+
+.text-left-2,
+.left-2 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-2 {
+    bottom: 38.5%; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-2 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 55%;
+    left: 60%;
+}
+
+.text-left-3,
+.left-3 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-3 {
+    bottom: 23.0%; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-3 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 70%;
+    left: 60%;
+}
+
+.text-left-4,
+.left-4 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-4 {
+    bottom: 9.0%; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-4 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 84.5%;
+    left: 60%;
+}
+
+.text-left-5,
+.left-5 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-5 {
+    top: 68.5em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-5 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 100.5%;
+    left: 60%;
+}
+
+.text-left-6,
+.left-6 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-6 {
+    top: 78em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-6 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 52.5em;
+    left: 60%;
+}
+
+.text-left-7,
+.left-7 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-7 {
+    top: 88em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-7 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 59.5em;
+    left: 60%;
+}
+
+.text-left-8,
+.left-8 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-8 {
+    top: 98em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-8 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 66.5em;
+    left: 60%;
+}
+
+.text-left-9,
+.left-9 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-9 {
+    top: 108em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-9 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 73.5em;
+    left: 60%;
+}
+
+.text-left-10,
+.left-10 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-10 {
+    top: 118em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-10 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 80.5em;
+    left: 60%;
+}
+
+.text-left-11,
+.left-11 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-11 {
+    top: 128.5em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-11 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 87.5em;
+    left: 60%;
+}
+
+.text-left-12,
+.left-12 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-12 {
+    top: 138.5em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-12 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 95em;
+    left: 60%;
+}
+
+.text-left-13,
+.left-13 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-13 {
+    top: 148em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-13 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 102em;
+    left: 60%;
+}
+
+.text-left-14,
+.left-14 {
+    position: absolute;
+    right: 20px; /* Align to the far right */
+    bottom: 0; /* Start at 50% from the top */
+    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+}
+
+/* This will position the 'left' text slightly above the amount */
+.text-left-14 {
+    top: 158em; /* Adjust the position to move it below the amount */
+    left: 60.5%;
+    color: #888; /* Grey color for the 'left' text */
+    font-size: 70%;
+}
+
+/* Highlight the amount in green and make it bold */
+.left-14 {
+    color: #54c756; /* Green color for the amount */
+    font-weight: bold; /* Bold font for the amount */
+    top: 109em;
+    left: 60%;
 }
