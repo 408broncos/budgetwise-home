@@ -940,6 +940,7 @@ margin-bottom: 60px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
 }
 
 .graph-legend {
@@ -974,3 +975,153 @@ margin-bottom: 60px;
 .legend-icon.transport { background-color: #f1b32d; }
 .legend-icon.food { background-color: #08096d; }
 .legend-icon.other { background-color: #684db8; }
+
+.recent-transactions-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px; /* Spacing from the previous content */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-transactions-header h3 {
+    margin: 0;
+}
+
+.see-all {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
+}
+
+.transaction-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.transaction-details {
+    flex-grow: 1;
+}
+
+
+.transaction-subtitle {
+    color: #888;
+    display: block;
+}
+
+.transaction-date {
+    color: #888;
+
+}
+.transaction-amount {
+    margin-right: 80px;
+}
+
+.transaction-arrow {
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+}
+
+.transaction-icon.food {
+    background-image: url('/icons/food.png');
+}
+
+.transaction-icon.education {
+    background-image: url('/icons/education.png');
+}
+
+.transaction-icon.groceries {
+    background-image: url('/icons/grocery.png');
+}
+
+.transaction-icon.shopping {
+    background-image: url('/icons/shop.png');
+}
+
+.bank-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bank-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bank-header h3 {
+    margin: 0;
+}
+
+.bank-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
+}
+
+.bank-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.bank-details {
+    flex-grow: 1;
+}
+
+
+.card-number {
+    color: #888;
+    display: block;
+}
+
+.balance-amount {
+    color: #888;
+
+}
+.bank-balance{
+    margin-right: 80px;
+}
+
+.bank-arrow {
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+}
+
+.bank-icon {
+    background-image: url('/icons/bank.png');
+}
+

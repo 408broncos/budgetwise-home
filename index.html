@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgetwise Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
 </head>
 
@@ -268,7 +270,76 @@
                     <bar-chart :chart-data="chartData" :options="chartOptions"></bar-chart>
                 </div>
             </div>
-        </div>
+            <div class="recent-transactions-container">
+                <div class="recent-transactions-header">
+                    <h3>Recent Transactions</h3>
+                    <button class="see-all">See all</button>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon food"></div>
+                    <div class="transaction-details">
+                        <span class="transaction-title">Cold Brew</span>
+                        <span class="transaction-subtitle">Starbucks</span>
+                    </div>
+                    <div class="transaction-amount-date">
+                        <div class="transaction-amount">$5.92</div>
+                        <div class="transaction-date">03-30-2022</div>
+                    </div>
+                    <div class="transaction-arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon education"></div>
+                    <div class="transaction-details">
+                        <span class="transaction-title">Coursera</span>
+                        <span class="transaction-subtitle">Education</span>
+                    </div>
+                    <div class="transaction-amount-date">
+                        <div class="transaction-amount">$39.00</div>
+                        <div class="transaction-date">03-12-2022</div>
+                    </div>
+                    <div class="transaction-arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon groceries"></div>
+                    <div class="transaction-details">
+                        <span class="transaction-title">AppleTree</span>
+                        <span class="transaction-subtitle">Groceries</span>
+                    </div>
+                    <div class="transaction-amount-date">
+                        <div class="transaction-amount">$3.98</div>
+                        <div class="transaction-date">03-03-2022</div>
+                    </div>
+                    <div class="transaction-arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon shopping"></div>
+                    <div class="transaction-details">
+                        <span class="transaction-title">BKST-U-PENN</span>
+                        <span class="transaction-subtitle">Shopping</span>
+                    </div>
+                    <div class="transaction-amount-date">
+                        <div class="transaction-amount">$49.89</div>
+                        <div class="transaction-date">03-03-2022</div>
+                    </div>
+                    <div class="transaction-arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="bank-container">
+                <div class="bank-header">
+                    <h3>Bank & Credit Cards</h3>
+                </div>
+                <div class="bank-item">
+                    <div class="bank-icon"></div>
+                    <div class="bank-details">
+                        <span class="bank-title">Bank of America</span>
+                        <span class="card-number">...4765</span>
+                    </div>
+                    <div class="bank-balance-amount">
+                        <div class="bank-balance">Balance</div>
+                        <div class="balance-amount">$1,326.23</div>
+                    </div>
+                    <div class="bank-arrow"><i class="fas fa-chevron-up"></i></div>
+                </div>
             </div>
         </div>
     </div>
