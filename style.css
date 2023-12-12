@@ -1054,20 +1054,20 @@ margin-bottom: 60px;
     margin-top: -10px;
 }
 
-.transaction-icon.food {
-    background-image: url('/icons/food.png');
+.transaction-icon-food {
+    background-image: url('icons/food.png');
 }
 
-.transaction-icon.education {
-    background-image: url('/icons/education.png');
+.transaction-icon-education {
+    background-image: url('icons/education.png');
 }
 
-.transaction-icon.groceries {
-    background-image: url('/icons/grocery.png');
+.transaction-icon-groceries {
+    background-image: url('icons/grocery.png');
 }
 
-.transaction-icon.shopping {
-    background-image: url('/icons/shop.png');
+.transaction-icon-shopping {
+    background-image: url('icons/shop.png');
 }
 
 .bank-container {
