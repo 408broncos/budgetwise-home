@@ -72,6 +72,8 @@ html, body {
     width: 30px; /* Adjust as per your layout */
     height: 30px; /* Adjust as per your layout */
     margin-right: 10px; /* Space between avatar and name */
+    background-color: #cccccc; /* Placeholder if no icon is set */
+
 }
 
 .user-name {
@@ -1015,46 +1017,93 @@ margin-bottom: 60px;
 .transaction-item {
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 15px 20px; /* Increased padding for better spacing */
     border-radius: 10px;
     margin-bottom: 10px;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .transaction-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-size: cover;
-    margin-right: 10px;
+    background-color: #cccccc; /* Placeholder if no icon is set */
+    margin-right: 20px; /* Increased spacing to match the design */
+    display: flex; /* To center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .transaction-details {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    margin-left: 20px;
 }
 
+.transaction-title {
+    font-weight: bold;
+    margin-bottom: 4px; /* Reduced space between title and subtitle */
+}
 
 .transaction-subtitle {
     color: #888;
-    display: block;
+    font-size: smaller; /* Smaller font size for subtitle */
+}
+
+.transaction-amount-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; /* Center vertically */
+}
+
+.transaction-amount {
+    font-weight: bold;
+    margin-bottom: 4px; /* Reduced space between amount and date */
 }
 
 .transaction-date {
     color: #888;
-
-}
-.transaction-amount {
-    margin-right: 80px;
+    font-size: smaller; /* Smaller font size for date */
 }
 
 .transaction-arrow {
-    width: 10px;
-    height: 10px;
-    margin-top: -10px;
+    margin-left: 20px; /* Spacing from the amount/date */
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* If you are using an image tag for the icon */
+.transaction-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* To ensure the rounded corners */
+.transaction-item:first-child {
+    margin-top: 10px;
+}
+
+/* Add hover effect */
+.transaction-item:hover {
+    background-color: #eaeaea;
+}
+
+/* Additional responsive tweaks if necessary */
+@media (max-width: 768px) {
+    .transaction-item {
+        flex-wrap: wrap;
+    }
 }
 
 
+.transaction-icon.food2 {
+    background-image: url('/icons/food2.png');
+}
 
 .transaction-icon.education2 {
     background-image: url('/icons/education2.png');
