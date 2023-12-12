@@ -1180,6 +1180,8 @@ margin-bottom: 60px;
 
 .bank-icon {
     background-image: url('/icons/bank.png');
+    background-color: #cccccc; /* Placeholder if no icon is set */
+
 }
 
 .savings-goals-container {
