@@ -1054,23 +1054,23 @@ margin-bottom: 60px;
     margin-top: -10px;
 }
 
-.transaction-icon-food {
-    background-image: url('icons/food.png');
+.transaction-icon.food2 {
+    background-image: url('/icons/food2.png');
 }
 
-.transaction-icon-education {
-    background-image: url('icons/education.png');
+.transaction-icon.education2 {
+    background-image: url('/icons/education2.png');
 }
 
-.transaction-icon-groceries {
-    background-image: url('icons/grocery.png');
+.transaction-icon.groceries2 {
+    background-image: url('/icons/grocery2.png');
 }
 
-.transaction-icon-shopping {
-    background-image: url('icons/shop.png');
+.transaction-icon.shopping2 {
+    background-image: url('/icons/shop2.png');
 }
 
-.bank-container {
+.bank-container2 {
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
