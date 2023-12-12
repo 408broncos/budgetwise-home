@@ -53,6 +53,19 @@ html, body {
     padding: 4px 15px;
     font-size: 15px; /*  font size  */
     margin-right: 10px; /*  spacing between nav items */
+    position: relative; /* This ensures that the pseudo-element is positioned relative to the item */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.nav-item:hover::after {
+    content: ''; /* This is necessary for a pseudo-element to display */
+    position: absolute; /* Positions the pseudo-element absolutely within its parent */
+    bottom: 0; /* Aligns the pseudo-element to the bottom of the parent */
+    left: 0; /* Aligns the pseudo-element to the left of the parent */
+    width: 100%; /* Makes the pseudo-element as wide as the parent */
+    height: 2px; /* The height of the border */
+    background-color: #875fcb; /* The color of the border */
+    border-radius: 2px; /* Optional: if you want rounded corners */
 }
 
 /* ... */
