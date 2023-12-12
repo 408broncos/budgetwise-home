@@ -65,7 +65,7 @@ html, body {
     width: 100%; /* Makes the pseudo-element as wide as the parent */
     height: 2px; /* The height of the border */
     background-color: #875fcb; /* The color of the border */
-    border-radius: 2px; /* Optional: if you want rounded corners */
+    border-radius: 2px;
 }
 
 /* ... */
@@ -73,17 +73,17 @@ html, body {
 .welcome {
     position: absolute;
     top: 50%;
-    right: 80px; /* Adjust as per your layout */
+    right: 80px; 
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    font-size: 16px; /* Adjust as per your layout */
+    font-size: 16px; 
 }
 
 .user-avatar {
     border-radius: 50%; /* Circular avatar */
-    width: 30px; /* Adjust as per your layout */
-    height: 30px; /* Adjust as per your layout */
+    width: 30px; 
+    height: 30px; 
     margin-right: 10px; /* Space between avatar and name */
     background-color: #cccccc; /* Placeholder if no icon is set */
 
@@ -93,7 +93,6 @@ html, body {
     margin-right: 5px; /* Space between name and arrow */
 }
 
-/* If you do not want to use Font Awesome, you can use a text-based arrow */
 .fas.fa-chevron-down {
     cursor: pointer;
 }
@@ -212,7 +211,7 @@ html, body {
   
 .categories h4 {
     text-align: center;
-    width: 100%; /* Ensure full width for alignment */
+    width: 100%; 
     margin-top: 20px; 
     margin-left: -500px;
 }
