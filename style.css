@@ -57,24 +57,31 @@ html, body {
 
 /* ... */
 
-.auth {
+.welcome {
+    position: absolute;
+    top: 50%;
+    right: 80px; /* Adjust as per your layout */
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
+    font-size: 16px; /* Adjust as per your layout */
 }
 
-.auth .auth-item {
-    text-decoration: none;
-    color: #333;
-    padding: 4px 15px;
-    margin-left: 10px;
+.user-avatar {
+    border-radius: 50%; /* Circular avatar */
+    width: 30px; /* Adjust as per your layout */
+    height: 30px; /* Adjust as per your layout */
+    margin-right: 10px; /* Space between avatar and name */
 }
 
-#blue {
-    color: rgb(0, 0, 0);
-    border-radius: 4px;
-    padding: 6px 12px;
+.user-name {
+    margin-right: 5px; /* Space between name and arrow */
 }
 
+/* If you do not want to use Font Awesome, you can use a text-based arrow */
+.fas.fa-chevron-down {
+    cursor: pointer;
+}
 .container {
     padding: 30px;
     box-sizing: border-box;
@@ -148,31 +155,46 @@ html, body {
     border: none;
     cursor: pointer;
     border-radius: 10px; /* Rounded corners for the dropdown */
-    font-size: 14px; 
+    font-size: 14px;
     margin-top: 10px;
     margin-right: 200px;
-}
-.dropdown-content {
+    position: relative; /* Needed for absolute positioning of the arrow */
+    display: flex; /* Align the text and arrow horizontally */
+    align-items: center; /* Center the text and arrow vertically */
+    justify-content: space-between; /* Put space between text and arrow */
+  }
+  
+  .arrow {
+    border: solid rgb(85, 192, 90);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 20px; /* Spacing between text and arrow */
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  /* This will hide the default arrow that appears on dropdowns in some browsers */
+  .dropbtn::-ms-expand {
+    display: none;
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e2f7e3;;
+    background-color: #e2f7e3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(85, 192, 90);
     z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    top: 100%; /* Position the dropdown content right below the button */
+    left: 0; /* Align the dropdown content with the left edge of the button */
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom of the dropdown */
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: block;
-}
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
+  }
+  
 .categories h4 {
     text-align: center;
     width: 100%; /* Ensure full width for alignment */
@@ -241,7 +263,7 @@ margin-bottom: 60px;
 
 .summary-amount-2 {
     display: block;
-    color: #54c756; /* Green color for the amount */
+    color: #54c756;  
     font-size: 1.5em; /* Larger font size for the amount */
     margin: 0 20px;
 
@@ -465,7 +487,6 @@ margin-bottom: 60px;
     margin: 0 500px;
     margin-top: 90px;
     margin-left: 1px;
-    width: 100px;
 }
 
 .education-progress {
@@ -473,7 +494,7 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -170px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 
@@ -482,7 +503,7 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .food-progress {
@@ -490,31 +511,31 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -170px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .groceries-progress {
     background-color: #69e86b;
     height: 10px;
     border-radius: 10px;
-    margin-left: -175px;
-    /* Width will be set inline to represent the progress */
+    margin-left: -180px;
+ 
 }
 
 .health-progress {
     background-color: #c33cf0;
     height: 10px;
     border-radius: 10px;
-    margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+    margin-left: -175px;
+ 
 }
 
 .housing-progress {
     background-color: #fb3a3a;
     height: 10px;
     border-radius: 10px;
-    margin-left: -190px;
-    /* Width will be set inline to represent the progress */
+    margin-left: -205px;
+ 
 }
 
 .misc-progress {
@@ -522,7 +543,7 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .office-progress {
@@ -530,7 +551,7 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .pet-progress {
@@ -538,15 +559,15 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .shop-progress {
     background-color: #1e39b5;
     height: 10px;
     border-radius: 10px;
-    margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+    margin-left: -165px;
+ 
 }
 
 .sub-progress {
@@ -554,15 +575,15 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .transport-progress {
     background-color: #f1b32d;
     height: 10px;
     border-radius: 10px;
-    margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+    margin-left: -170px;
+ 
 }
 
 .travel-progress {
@@ -570,109 +591,105 @@ margin-bottom: 60px;
     height: 10px;
     border-radius: 10px;
     margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+ 
 }
 
 .util-progress {
     background-color: #37a4e9;
     height: 10px;
     border-radius: 10px;
-    margin-left: -160px;
-    /* Width will be set inline to represent the progress */
+    margin-left: -170px;
+ 
 }
 .text-left,
 .left {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left {
-    bottom: 54%; /* Adjust the position to move it below the amount */
+    bottom: 52%;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 40%;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 42%;
     left: 60%;
 }
 
 .text-left-2,
 .left-2 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-2 {
-    bottom: 38.5%; /* Adjust the position to move it below the amount */
+    bottom: 37%;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-2 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 55%;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 57%;
     left: 60%;
 }
 
 .text-left-3,
 .left-3 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-3 {
-    bottom: 23.0%; /* Adjust the position to move it below the amount */
+    bottom: 22%;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-3 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 70%;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 72.5%;
     left: 60%;
 }
 
 .text-left-4,
 .left-4 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-4 {
-    bottom: 9.0%; /* Adjust the position to move it below the amount */
+    bottom: 7%;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-4 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 84.5%;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 87%;
     left: 60%;
 }
 
@@ -684,210 +701,204 @@ margin-bottom: 60px;
     margin-right: 250px; 
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-5 {
-    top: 68.5em; /* Adjust the position to move it below the amount */
+    top: 69.5em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-5 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 100.5%;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 102.5%;
     left: 60%;
 }
 
 .text-left-6,
 .left-6 {
     position: absolute;
-    right: 20px; /* Align to the far right */
+    right: 20px;  
     bottom: 0; 
     margin-right: 250px; 
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-6 {
-    top: 78em; /* Adjust the position to move it below the amount */
+    top: 79em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-6 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 52.5em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 53.5em;
     left: 60%;
 }
 
 .text-left-7,
 .left-7 {
     position: absolute;
-    right: 20px; /* Align to the far right */
+    right: 20px;  
     bottom: 0; 
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-7 {
-    top: 88em; /* Adjust the position to move it below the amount */
+    top: 89em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-7 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 59.5em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 60.5em;
     left: 60%;
 }
 
 .text-left-8,
 .left-8 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-8 {
-    top: 98em; /* Adjust the position to move it below the amount */
+    top: 99em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-8 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 66.5em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 67.5em;
     left: 60%;
 }
 
 .text-left-9,
 .left-9 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-9 {
-    top: 108em; /* Adjust the position to move it below the amount */
+    top: 109em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-9 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 73.5em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 74.5em;
     left: 60%;
 }
 
 .text-left-10,
 .left-10 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-10 {
-    top: 118em; /* Adjust the position to move it below the amount */
+    top: 118.5em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-10 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 80.5em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 81em;
     left: 60%;
 }
 
 .text-left-11,
 .left-11 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-11 {
-    top: 128.5em; /* Adjust the position to move it below the amount */
+    top: 128.5em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-11 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 87.5em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 88em;
     left: 60%;
 }
 
 .text-left-12,
 .left-12 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0;  
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-12 {
-    top: 138.5em; /* Adjust the position to move it below the amount */
+    top: 138.5em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-12 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
-    top: 95em;
+    color: #54c756;  
+    font-weight: bold;  
+    top: 95.3em;
     left: 60%;
 }
 
 .text-left-13,
 .left-13 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0; 
+    margin-right: 250px; 
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-13 {
-    top: 148em; /* Adjust the position to move it below the amount */
+    top: 148em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-13 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
+    color: #54c756; 
+    font-weight: bold;
     top: 102em;
     left: 60%;
 }
@@ -895,23 +906,22 @@ margin-bottom: 60px;
 .text-left-14,
 .left-14 {
     position: absolute;
-    right: 20px; /* Align to the far right */
-    bottom: 0; /* Start at 50% from the top */
-    margin-right: 250px; /* Ensure they are aligned to the right without extra space */
+    right: 20px;  
+    bottom: 0; 
 }
 
-/* This will position the 'left' text slightly above the amount */
+ 
 .text-left-14 {
-    top: 158em; /* Adjust the position to move it below the amount */
+    top: 158em;  
     left: 60.5%;
-    color: #888; /* Grey color for the 'left' text */
+    color: #888;  
     font-size: 70%;
 }
 
-/* Highlight the amount in green and make it bold */
+ 
 .left-14 {
-    color: #54c756; /* Green color for the amount */
-    font-weight: bold; /* Bold font for the amount */
+    color: #54c756;
+    font-weight: bold;
     top: 109em;
     left: 60%;
 }
@@ -925,7 +935,7 @@ margin-bottom: 60px;
 }
 
 .six-month-snapshot {
-    margin-top: 20px; /* Spacing from the summary items */
+    margin-top: 20px; 
     background-color: #fff; 
     border-radius: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the card */
@@ -933,7 +943,7 @@ margin-bottom: 60px;
 }
 
 #graph-container {
-    width: 100%; /* Full width of the right-content */
+    width: 100%; 
     height: 250px; 
     background-color: #f0f0f0;
     display: flex;
@@ -947,9 +957,9 @@ margin-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, auto); 
-    gap: 11px; /* space between items */
+    gap: 11px;
     padding-top: 10px;
-    margin-bottom: 1px; /* space below the legend */
+    margin-bottom: 1px; 
 }
 
 .legend-item {
@@ -979,7 +989,7 @@ margin-bottom: 60px;
 .recent-transactions-container {
     background-color: #fff;
     padding: 20px;
-    margin-top: 20px; /* Spacing from the previous content */
+    margin-top: 20px; 
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -1105,11 +1115,11 @@ margin-bottom: 60px;
 .card-number {
     color: #888;
     display: block;
+    font-size: 12px;
 }
 
 .balance-amount {
-    color: #888;
-
+    color: #4537b3;
 }
 .bank-balance{
     margin-right: 80px;
@@ -1125,3 +1135,93 @@ margin-bottom: 60px;
     background-image: url('/icons/bank.png');
 }
 
+.savings-goals-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+
+.savings-goals-section {
+    position: relative;
+    padding-top: 40px; /* This creates space for the absolutely positioned header */
+}
+
+.savings-goals-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Match the horizontal padding to align with the container */
+    pointer-events: none; /* Allows clicking through the header to elements below */
+}
+
+.goal-card {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.goal-details h3 {
+    margin: 0;
+}
+
+.see-details {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #4537b3;
+    cursor: pointer;
+}
+
+.goal-chart {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4caf50 0% 50%, 
+        #e0e0e0 50% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.chart-text {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    display: block;
+    top: 30%;
+    color: #54c756;
+}
+
+.chart-text-2 {
+    position: absolute;
+    text-align: center;
+    font-size: 0.7em;
+    display: block;
+}
+
+.total-savings {
+    font-size: 0.9em;
+    margin-top: 10px;
+    top: 500px;
+    text-align: end;
+    margin-left: 150px;
+}
+
+.add-goal {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

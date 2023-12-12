@@ -24,8 +24,9 @@
                 </nav>
             </div>
             <div class="welcome">
-                <a href="#avatar" class="auth-item"></a>
-                <a href="#user-name" class="auth-item" id="blue"></a>
+                <img src="/icons/user.png" alt="John Doe" class="user-avatar">
+                <span class="user-name">John Doe</span>
+                <i class="fas fa-chevron-down"></i> <!-- Dropdown arrow using Font Awesome -->
             </div>
         </div>
 
@@ -44,7 +45,7 @@
             <div class="monthly-budget">
                 <h3>Monthly Budget</h3>
                 <div class="dropdown">
-                    <button class="dropbtn">April 2022</button>
+                    <button class="dropbtn">April 2022<i class="arrow down"></i></button>
                     <div class="dropdown-content">
                         <a href="#">March 2022</a>
                         <a href="#">February 2022</a>
@@ -193,7 +194,7 @@
                 <span>spent $30 of $100</span>
             </div>
             <div class="category-progress">
-                <div class="transport-progress" style="width: 30%;"></div> <!-- Adjust width as needed -->
+                <div class="transport-progress" style="width: 40%;"></div> 
             </div>
             <span class="text-left-12">left</span>
             <span class="left-12">$70</span>
@@ -205,7 +206,7 @@
                 <span>spent $0 of $100</span>
             </div>
             <div class="category-progress">
-                <div class="travel-progress" style="width: 1%;"></div> <!-- Adjust width as needed -->
+                <div class="travel-progress" style="width: 1%;"></div> 
             </div>
             <span class="text-left-13">left</span>
             <span class="left-13">$100</span>
@@ -217,7 +218,7 @@
                 <span>spent $160 of $300</span>
             </div>
             <div class="category-progress">
-                <div class="util-progress" style="width: 55%;"></div> <!-- Adjust width as needed -->
+                <div class="util-progress" style="width: 55%;"></div> 
             </div>
             <span class="text-left-14">left</span>
             <span class="left-14">$140</span>
@@ -253,7 +254,6 @@
                 <h3>6 Month Snapshot</h3>
                 <!-- Placeholder for graph -->
                 <div id="graph-container">
-                    <!-- Graph will be rendered here, perhaps using a JavaScript charting library -->
                     <p>Graph will go here</p>
                 </div>
                 <div class="graph-legend">
@@ -264,7 +264,6 @@
                     <span class="legend-item"><i class="legend-icon transport"></i>Transportation</span>
                     <span class="legend-item"><i class="legend-icon food"></i>Food</span>
                     <span class="legend-item"><i class="legend-icon other"></i>Other</span>
-                    <!-- ... Other legend items ... -->
                 </div>
                 <div class="graph-section">
                     <bar-chart :chart-data="chartData" :options="chartOptions"></bar-chart>
@@ -341,21 +340,26 @@
                     <div class="bank-arrow"><i class="fas fa-chevron-up"></i></div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-        <div class="user-info">
-        </div>
-    </div>
-</div>
-        <div class="home">
-            <section id="home">
-                <article class="hero">
-                    <div class="hero-text">                      
+            <div class="savings-goals-section">
+                <div class="savings-goals-header">
+                    <h2>Savings Goals</h2>
+                    <button class="add-goal">+</button>
+                </div>
+                <div class="savings-goals-container">
+                    <div class="goal-card">
+                        <div class="goal-details">
+                            <h3>Italy Trip</h3>
+                            <button class="see-details">See details</button>
+                            <div class="goal-chart">
+                                <span class="chart-text">$300</span>
+                                <span class="chart-text-2">of $600 saved this month</span>
+                            </div>
+                            <p class="total-savings">Total savings: $300 of $3,000 by April 15, 2023</p>
+                        </div>
                     </div>
-                </article>
-            </section>
-        </div>
+                </div>
+            </div>
+            
     </div>
     <script src="app.js"></script>
 </body>
